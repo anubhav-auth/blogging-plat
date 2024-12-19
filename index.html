@@ -150,6 +150,7 @@
                 seaweed), menma, and scallions.
               </p></big
             >
+            <br>
             <a href="indexDetailed.html">
               <button class="btn btn-primary">Read More</button></a
             >
@@ -182,11 +183,12 @@
                 flavor guides.
               </p></big
             >
+            <br>
             <a href="indexDetailed.html" class="btn btn-primary">Read More</a>
           </div>
         </div>
 
-        <!-- New Post Form Section -->
+
         <div class="col-md-4">
           <h2 class="new-post-title">Create a New Post</h2>
           <div class="new-post-form">
@@ -217,17 +219,17 @@
         </div>
       </div>
     </div>
-    <!-- Footer -->
+
     <footer class="text-center mt-5">
       <div class="footer-container">
         <div class="footer-item">
-          <h5 style="color: rgb(12, 113, 146)">Created by: GROUP 6</h5>
+          <h5 style="color: rgb(12, 113, 146)">Created by: GROUP 2</h5>
         </div>
       </div>
       <div class="footer-container">
         <div class="footer-item">
           <h4>Pranita Patel</h4>
-          <p>2341000000</p>
+          <p>2341016219</p>
         </div>
         <div class="footer-item">
           <h4>Anubhav Jaiswal</h4>
@@ -239,22 +241,21 @@
         </div>
         <div class="footer-item">
           <h4>Karan Thakur</h4>
-          <p>23410000000</p>
+          <p>2341020010</p>
         </div>
       </div>
     </footer>
 
-    <!-- jQuery script to handle the form submission -->
+
     <script>
       $(document).ready(function () {
         $("#newPostForm").submit(function (e) {
           e.preventDefault();
 
-          // Get the values from the form
+
           const title = $("#postTitle").val();
           const content = $("#postContent").val();
 
-          // Create a new blog post dynamically
           const newPost = `
                     <div class="blog-post">
                         <h4>${title}</h4>
@@ -264,10 +265,9 @@
                     </div>
                 `;
 
-          // Append the new post to the blog post list
+
           $(".col-md-8").prepend(newPost);
 
-          // Clear the form
           $("#postTitle").val("");
           $("#postContent").val("");
         });
